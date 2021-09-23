@@ -1,0 +1,84 @@
+.TopBar {
+  background-color: var(--color-primary);
+  width: 95%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  border: var(--border-width) solid var(--color-outline);
+  border-top: none;
+  box-shadow: var(--box-shadow-primary);
+}
+
+.TopBar > .Menu {
+  display: flex;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.TopBar > .Title {
+  display: flex;
+  padding-left: 12px;
+}
+
+.TopBar > .Title:focus,
+.TopBar > .Title:hover {
+  cursor: pointer;
+}
+
+.TopBar > .Title > h1 {
+  margin-left: 12px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 30px;
+  white-space: nowrap;
+}
+
+.BottomBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: static;
+  width: 100%;
+  margin-top: auto;
+}
+
+.Bottom > p {
+  margin: auto;
+  text-align: center;
+}
+
+.BottomBar > .Menu {
+  justify-content: center;
+}
+
+.BottomBar > .Menu > p {
+  padding: 0em 0.8em;
+}
+
+@media screen and (max-width: 59em) {
+  .TopBar {
+    padding-top: 0.4em;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .TopBar .Menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 26em) {
+  .TopBar .Title h1 {
+    display: none;
+  }
+  .TopBar {
+    width: 99%;
+  }
+}

@@ -1,0 +1,18 @@
+.LogoContainer {
+  border-radius: 50%;
+  background-color: hsl(200, 100%, 50%);
+  transform: rotate(0deg);
+  transition: transform 3000ms;
+  transition-delay: 0ms;
+}
+
+.LogoContainer:hover {
+  transform: rotate(405deg);
+  transition-delay: 5000ms;
+}
+
+.LogoContainer .Element {
+  position: absolute;
+  border-radius: 50%;
+  background-color: hsl(225, 100%, 45%);
+}

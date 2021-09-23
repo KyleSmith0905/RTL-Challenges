@@ -1,0 +1,31 @@
+.Separator {
+  border: var(--border-width) solid var(--color-outline);
+  border-right: none;
+  border-left: none;
+  margin: 0.6em;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.FieldName {
+  float: left;
+  margin: 0.8em 1em;
+  word-break: break-word;
+}
+
+.Separator > .MultiContent {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.Separator > .MultiContent > *{
+  margin-right: 1em;
+  word-break: break-word;
+}
+
+.SingleSeparator {
+  margin-top: 0.9em;
+  border-top: var(--border-width) solid var(--color-outline);
+}

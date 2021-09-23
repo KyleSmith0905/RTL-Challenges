@@ -1,0 +1,52 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "react-hooks"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended"
+  ],
+  "rules": {
+    "quotes": [2, "single"],
+    "semi-style": [2, "last"],
+    "semi": [2, "always", {"omitLastInOneLineBlock": true}],
+    "indent": [2, "tab",  {"SwitchCase": 1}],
+    "no-irregular-whitespace": 2,
+    "no-octal": 2,
+    "no-multi-str": 2,
+    "eqeqeq": [2, "always"],
+    "no-alert": 2,
+    "arrow-spacing": 2,
+    "no-var": 2,
+    "react-hooks/rules-of-hooks": 2,
+    "react/prop-types": 2,
+    "react/react-in-jsx-scope": 0,
+    "react/self-closing-comp": 2,
+    "react/default-props-match-prop-types": 2,
+    "react/no-string-refs": 2,
+    "react/function-component-definition": [2, { "namedComponents": "arrow-function" }],
+    "react/no-typos": 2,
+    "react/jsx-max-depth": [2, { "max": 7 }],
+    "react/jsx-no-duplicate-props": 2,
+    "react/jsx-no-script-url": 2,
+    "react/jsx-no-target-blank": [2, {"enforceDynamicLinks": "always", "forms": true, "warnOnSpreadAttributes": true}],
+    "react/jsx-pascal-case": 2,
+    "react/jsx-props-no-multi-spaces": 2,
+    "react/void-dom-elements-no-children": 2,
+    "react/jsx-tag-spacing": [2, { "beforeSelfClosing": "always", "afterOpening": "never", "beforeClosing": "never" , "closingSlash": "never"}],
+    "jsx-quotes": [2 , "prefer-single"]
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    }
+  }
+}

@@ -1,0 +1,259 @@
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  transition-property: none;
+  transition: background-color ease-in-out 0s;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+:root {
+  --color-background: hsl(227, 18%, 10%);
+  --color-primary: hsl(226, 22%, 15%);
+  --color-secondary: hsl(220, 27%, 20%);
+  --color-outline: hsl(225, 65%, 50%);
+  --color-text: hsl(210, 75%,72.5%);
+  --color-hyperlink-hover: rgba(204, 230, 255);
+  --color-box-shadow: #000000;
+  --color-hyperlink: hsla(210, 100%, 50%, 0);
+  --border-width: 1.2px;
+  --border-radius: 1.5em;
+  --box-shadow-primary: 0em 0em 1.1em 0.1em var(--color-box-shadow);
+  --box-shadow-secondary: 0em 0em 0.4em -0.15em var(--color-box-shadow);
+  --box-shadow-hover: 0em 0em 0.5em 0.1em var(--color-box-shadow);
+  --transition-duration: 300ms;
+}
+
+* {
+  transition-property: all;
+  transition-timing-function: ease-in-out; 
+  transition-duration: var(--transition-duration);
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+input,
+textarea {
+  font: inherit;
+  font-size: 0.9em;
+}
+
+p > a,
+a,
+td,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-decoration-color: transparent;
+  word-wrap: break-word;
+  color: var(--color-text);
+}
+
+body,
+td,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: verdana, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+}
+
+img {
+  border-radius: var(--border-radius);
+}
+
+ul {
+  columns: 16em;
+}
+
+li::before {
+  background: var(--color-gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-attachment: fixed;
+  content: '• ';
+}
+
+.Button,
+button {
+  margin: 0.25em 0.62em 0.6em 0.62em;
+  border-radius: var(--border-radius);
+  background-color: var(--color-secondary);
+  border: var(--border-width) solid var(--color-outline);
+}
+
+select,
+textarea,
+input,
+.Button,
+button {
+  cursor: pointer;
+  box-shadow: var(--box-shadow-secondary)
+}
+
+.TopBar > .Title:focus,
+.TopBar > .Title:hover
+textarea:focus,
+select:focus,
+input:focus,
+.Button:focus,
+button:focus,
+.Button:hover,
+button:hover {
+  transform: scale(1.05);
+  box-shadow: var(--box-shadow-hover);
+}
+
+a > h3,
+.Button > h3,
+button h3 {
+  margin: 0.5em 0.7em;
+  font-size: 1.3em;
+}
+
+button {
+  font-size: 1em;
+}
+
+a {
+  color: transparent;
+}
+
+.HoverUnderline p,
+.Button h3,
+button h3,
+a h1,
+a h2,
+a h3,
+.Link h3 {
+  text-decoration-line: underline;
+  text-decoration-color: var(--color-hyperlink);
+}
+
+.HoverUnderline:hover,
+.Button:hover h3,
+button:hover h3,
+a:hover h1,
+a:hover h2,
+a:hover h3,
+.Link:hover h3 {
+  text-decoration-line: underline;
+  text-decoration-color: var(--color-hyperlink-hover);
+}
+
+.ButtonHidden {
+  cursor: pointer;
+}
+
+.Box {
+  border-radius: var(--border-radius);
+  border: var(--border-width) solid var(--color-outline);
+  background-color: var(--color-primary);
+  padding: 0em 2em 1.3em 2em;
+  margin: 0em auto 1.2em auto;
+  box-shadow: var(--box-shadow-primary);
+}
+
+.MainPanel {
+  margin-top: 1.2em;
+  width: 80%;
+  max-width: 55em;
+}
+
+.InnerBox {
+  width: 100%;
+  margin: 1.6em 0em 0.4em 0em;
+  border-radius: var(--border-radius);
+  border: var(--border-width) solid var(--color-outline);
+  background-color: var(--color-secondary);
+  padding: 0.5em 1em 0.5em 1em;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--box-shadow-secondary);
+  box-sizing: border-box;
+}
+
+.InnerBox p,
+.InnerBox h2 {
+  margin-block-start: 0.4em;
+  margin-block-end: 0.4em;
+  text-align: left;
+}
+
+.Menu {
+  display: flex;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Menu .InnerBox {
+  width: auto;
+}
+
+.TextAndIcon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0em 1em;
+  width: max-content;
+}
+
+.TextAndIcon > p {
+  display:inline-block;
+  padding-right: 0.9em;
+  clear:both;
+}
+
+:focus-visible {
+  outline: none;
+}
+
+.Center {
+  display: block;
+  margin: 1.2em auto 0.1em auto;
+}
+
+.FadedText {
+  opacity: 75%;
+  font-size: 0.9em;
+}
+
+table {
+  border: var(--border-width) solid var(--color-outline);
+  border-radius: var(--border-radius);
+  padding: 0.8em;
+}
+
+td {
+  text-align: center;
+  padding: 0.5em 0.4em;
+}
+
+@media screen and (max-width: 26em) {
+  .MainPanel {
+    width: 94%;
+  }
+  
+  .DeleteSmall {
+    display: none;
+  }
+}

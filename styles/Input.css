@@ -1,0 +1,89 @@
+select {
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+textarea,
+input {
+  cursor: text;
+}
+
+input[type=color] {
+  cursor: pointer;
+  padding-bottom: 3.5em;
+  width: 10em;
+}
+
+textarea {
+  resize: vertical;
+  height: 8em;
+  min-height: 4em;
+  max-height: 16em;
+}
+
+select,
+textarea,
+input {
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+  border-radius: var(--border-radius);
+  border: var(--border-width) solid var(--color-outline);
+}
+
+select,
+textarea,
+input {
+  padding: 0.75em 1em;
+}
+
+input[type=color]::-webkit-color-swatch {
+  border-radius: var(--border-radius);
+  border: var(--border-width) solid var(--color-outline);
+  height: 2em;
+}
+
+textarea::placeholder,
+input::placeholder {
+  color: var(--color-text-text);
+  opacity: 35%;
+}
+
+.Form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 1em;
+}
+
+.InputGroup > .Form {
+  margin-top: 1.2em;
+}
+
+.InputGroup > .InputGroup {
+  margin-top: 1em;
+}
+
+.Form > * {
+  margin: 0em 0.4em;
+}
+
+.InputGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 0.75em;
+}
+
+.InputGroup > .TextAndIcon {
+  margin: 0em auto;
+}
+
+.InputGroup > p {
+  font-size: 1.1em;
+  margin: 0em 0em 0.9em 1em;
+}
+
+.Form > .InputGroup > p {
+  margin: 0em auto 0.9em auto;
+}
