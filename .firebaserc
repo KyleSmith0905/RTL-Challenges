@@ -1,8 +1,0 @@
-{
-  "projects": {
-    "default": "rtlchallenges",
-    "production": "rtlchallenges",
-    "development": "rtl-challenges-dev"
-  },
-  "targets": {}
-}
