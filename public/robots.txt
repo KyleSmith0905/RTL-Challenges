@@ -1,3 +1,21 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow:
+user-agent: Googlebot-News
+user-agent: Googlebot-Video
+disallow: /
+
+user-agent: Googlebot-Image
+allow: /images
+disallow: /
+
+user-agent: *
+disallow: /account/
+disallow: /challenges
+disallow: /games/*/challenges
+disallow: /games/*/challenges/create
+disallow: /games/*/challenges/random
+allow: /games/*/challenges/
+disallow: /discord
+disallow: /privacy
+disallow: /admin
+disallow: /images
+
+sitemap: https://www.rtlchallenges.com/sitemap.xml

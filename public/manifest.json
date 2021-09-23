@@ -1,25 +1,29 @@
 {
+  "author": "FiNS Flexin",
   "short_name": "RTL Challenges",
-  "name": "Randomized challenges for video games",
+  "name": "RTL Challenges - Video Game Challenges",
+  "version": "1.0.0",
+  "description": "Randomized challenges for video games",
+  "default_locale": "en",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "images/favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "16x16 24x24 32x32 48x48 64x64 128x128"
     },
     {
-      "src": "logo192.png",
+      "src": "images/logo192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "images/logo512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#0d0d0d",
-  "background_color": "#0d0d0d"
+  "theme_color": "#1e222f",
+  "background_color": "#15171e"
 }
